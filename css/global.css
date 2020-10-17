@@ -7,7 +7,8 @@
 html {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 14px;
-  line-height: 1.15;
+  line-height: 1.2;
+
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -21,7 +22,7 @@ body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #212529;
   text-align: left;
   background-color: #fff;
@@ -68,6 +69,64 @@ svg {
   vertical-align: middle;
 }
 
+button {
+  display: inline-block;
+  padding: 0.85rem 0;
+  background-color: #fff;
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #888888;
+  text-align: center;
+  text-transform: none;
+
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  border: 1px solid #707070;
+  border-radius: 0.35rem;
+
+  box-shadow: 0px 1px 6px #00000029;
+
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+button:hover,
+button:focus {
+  color: #888888;
+  text-decoration: none;
+  box-shadow: 0px 1px 6px #00000069;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input,
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -87,9 +146,15 @@ svg {
 
 .column {
   position: relative;
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+
+  -ms-flex-preferred-size: 0;
+  flex-basis: auto;
+  -ms-flex-positive: 1;
+  flex-grow: 0;
+  flex-shrink: 1;
+  max-width: 100%;
 }
 
 .size-25 {
@@ -98,10 +163,22 @@ svg {
   max-width: 25%;
 }
 
+.size-40 {
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
 .size-50 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.size-60 {
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%;
 }
 
 .size-75 {
@@ -127,10 +204,22 @@ svg {
     max-width: 25%;
   }
 
+  .size-sm-40 {
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
   .size-sm-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .size-sm-60 {
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
   }
 
   .size-sm-75 {
@@ -157,10 +246,22 @@ svg {
     max-width: 25%;
   }
 
+  .size-md-40 {
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
   .size-md-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .size-md-60 {
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
   }
 
   .size-md-75 {
@@ -187,10 +288,22 @@ svg {
     max-width: 25%;
   }
 
+  .size-lg-40 {
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
   .size-lg-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .size-lg-60 {
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
   }
 
   .size-lg-75 {
@@ -207,6 +320,10 @@ svg {
 }
 
 @media only screen and (min-width: 1200px) {
+  button {
+    width: 160px;
+  }
+
   .container {
     max-width: 1140px;
   }
@@ -217,10 +334,22 @@ svg {
     max-width: 25%;
   }
 
+  .size-xl-40 {
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
   .size-xl-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .size-xl-60 {
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
   }
 
   .size-xl-75 {
