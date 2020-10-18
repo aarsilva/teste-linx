@@ -1,0 +1,50 @@
+/**
+ * Test Project - Linx
+ * Footer Section Style
+ */
+
+/* Footer Basic Styles */
+footer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  padding: 5rem 0;
+}
+
+footer .background {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+
+  bottom: 0;
+  z-index: 0;
+
+  background-color: #707070;
+  clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+}
+
+footer .container {
+  position: relative;
+  z-index: 1;
+
+  color: #fff;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+  margin-bottom: 0;
+}
+
+/* Responsive Footer Style */
+@media only screen and (min-width: 992px) {
+  footer {
+    padding: 7.5rem 0 5em;
+  }
+
+  footer .background {
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+  }
+}
