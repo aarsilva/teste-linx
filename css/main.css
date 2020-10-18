@@ -1,0 +1,141 @@
+/**
+ * Test Project - Linx
+ * Main Section Style
+ */
+
+
+/* Main Basic Styles */
+main {
+  color: #888888;
+}
+
+main section {
+  padding: 1.45rem 0;
+}
+
+/* Text and First Form Section Style */
+main .main-title {
+  font-size: 1.425rem;
+  font-weight: normal;
+}
+
+main .main-text {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+/* Section Header Style */
+main .section-header {
+  position: relative;
+  margin-top: 2.75rem;
+  padding-top: 2.75rem;
+}
+
+main .section-header-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1.3rem;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #888888;
+
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+main .section-header-divider {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 5px);
+
+  border: 1px solid #707070;
+
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* Product Section Style */
+.card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 0.4rem;
+  margin-top: 40px;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+
+  border: 1px solid #707070;
+  text-align: center;
+}
+
+.card-image > img {
+  width: 75%;
+  height: auto;
+}
+
+.card-text-title {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.2;
+
+  margin-bottom: 0.725rem;
+}
+
+.card-text-desc {
+  font-size: 0.875rem;
+  line-height: 1.31;
+}
+
+.card-price {
+  font-size: 0.825rem;
+  font-weight: normal;
+  line-height: 1.31;
+}
+
+.card-price-old {
+  margin-bottom: 6px;
+}
+
+.card-price-new {
+  font-size: 1.15rem;
+  font-weight: bold;
+  line-height: 1;
+
+  margin-bottom: 7px;
+}
+
+.card-button > button {
+  width: 100%;
+}
+
+.product-button {
+  padding-top: 4.2rem;
+}
+
+.product-button > button {
+  display: block;
+  width: 100%;
+}
+
+/* Newsletter Section Style */
+.newsletter {
+  padding-top: 7rem;
+}
+
+.newsletter-content {
+  margin-top: 35px
+}

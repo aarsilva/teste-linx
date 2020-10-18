@@ -1,3 +1,9 @@
+/**
+ * Test Project - Linx
+ * Header Section Style
+ */
+
+/* Heander Basic Styles */
 header {
   position: relative;
   width: 100vw;
@@ -34,9 +40,13 @@ header .header-text {
   font-weight: normal;
 }
 
-@media only screen and (min-width: 1200px) {
+/* Responsive Header Style */
+@media only screen and (min-width: 992px) {
   header {
     min-height: 400px;
+
+    background-color: #707070;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
   }
 
   header .header-title {
