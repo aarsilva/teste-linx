@@ -1,7 +1,10 @@
 /**
- * Flex Alignment
+ * Test Project - Linx
+ * Helper Styles, for positioning and spacing
  */
 
+
+/* Flex Alignment */
 .align-items-center {
   align-items: center !important;
 }
@@ -27,12 +30,17 @@
 }
 
 
-/**
- * Margin
- */
-
+/*  Margin */
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .mt-50 {
@@ -43,10 +51,7 @@
   margin-bottom: 30px;
 }
 
-/**
- * Padding
- */
-
+/* Padding */
 .pr-auto {
   padding-right: auto !important;
 }
@@ -59,4 +64,9 @@
 }
 .pl-30 {
   padding-left: 30px !important;
+}
+
+/* Text Helpers */
+.text-center {
+  text-align: center !important;
 }
