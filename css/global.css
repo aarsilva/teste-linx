@@ -244,6 +244,21 @@ button,
   line-height: 1.2;
 }
 
+.is-invalid {
+  border-color: #300505;
+}
+
+.is-valid {
+  border-color: #054005;
+}
+
+.errorMsg {
+  font-size: 0.85rem;
+  font-weight: normal;
+
+  color: #300505;
+}
+
 /* Responsive Styles */
 @media only screen and (min-width: 576px) {
   .container {
