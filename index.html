@@ -75,23 +75,23 @@
                 <label for="name" class="form-label">
                   Nome:
                 </label>
-                <input type="text" id="name" class="form-input" name="name">
+                <input type="text" id="name" class="form-input" name="name" required>
               </div>
               <div class="form-group">
                 <label for="mail" class="form-label">
                   E-mail:
                 </label>
-                <input type="email" id="mail" class="form-input" name="mail">
+                <input type="email" id="mail" class="form-input" name="mail" required>
               </div>
               <div class="form-group">
                 <label for="cpf" class="form-label">
                   CPF:
                 </label>
-                <input type="tel" id="cpf" class="form-input" name="cpf">
+                <input type="tel" id="cpf" class="form-input" name="cpf" required>
               </div>
               <div class="form-group">
                 <div class="form-radio">
-                  <input type="radio" id="male" class="form-radio-input" name="sex" value="M">
+                  <input type="radio" id="male" class="form-radio-input" name="sex" value="M" checked>
                   <label for="male" class="form-radio-label">Masculino</label>
                 </div>
                 <div class="form-radio">
@@ -151,7 +151,8 @@
                     <label for="newsName" class="form-label">
                       Nome do seu amigo:
                     </label>
-                    <input type="text" id="newsName" class="form-input" name="newsName">
+                    <input type="text" id="newsName" class="form-input" name="newsName" minlength="2" required>
+                    <span id="newsNameHelper" class="errorMsg"></span>
                   </div>
                 </div>
                 <div class="column size-lg-50">
@@ -159,7 +160,8 @@
                     <label for="newsEmail" class="form-label">
                       E-mail:
                     </label>
-                    <input type="email" id="newsEmail" class="form-input" name="newsEmail">
+                    <input type="email" id="newsEmail" class="form-input" name="newsEmail" required>
+                    <span id="newsEmailHelper" class="errorMsg"></span>
                   </div>
                 </div>
                 <div class="column size-lg-40">
