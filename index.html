@@ -25,7 +25,7 @@
         Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
       </p>
 
-      <div class="row justify-content-center mt-50">
+      <div class="row justify-content-center">
         <div class="column">
           <button type="button">Conheça a Linx</button>
         </div>
@@ -43,10 +43,10 @@
     <div class="background"></div>
   </header>
   <main>
-    <section>
+    <section class="main-algorithm">
       <div class="container">
         <div class="row">
-          <div class="column size-lg-60">
+          <div class="column size-lg-60 size-100 main-algorithm-content">
             <h2 class="main-title">
               Ajude o algorítimo a ser mais certeiro
             </h2>
@@ -71,8 +71,8 @@
               suscipit libero, at mattis augue est vel metus.
             </p>
           </div>
-          <div class="column size-lg-40">
-            <form >
+          <div class="column size-lg-40 size-100 main-algorithm-form">
+            <form>
               <div class="form-group">
                 <label for="name" class="form-label">
                   Nome:
@@ -112,7 +112,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="main-products">
       <div class="container">
         <div class="section-header">
           <div class="section-header-text">
@@ -120,11 +120,9 @@
           </div>
           <hr class="section-header-divider" />
         </div>
-        <div id="productList" class="row">
-
-        </div>
+        <div id="productList" class="row"></div>
         <div class="row justify-content-center">
-          <div class="column size-lg-50 product-button">
+          <div class="column size-lg-50 size-75 product-button">
             <button id="moreProductsButton" type="button">Ainda mais produtos aqui!</button>
           </div>
         </div>
@@ -140,7 +138,7 @@
           <hr class="section-header-divider" />
         </div>
         <div class="row newsletter-content justify-content-center">
-          <div class="column size-lg-100">
+          <div class="column size-100">
             <p class="newsletter-text text-center">
               Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
             </p>
@@ -148,7 +146,7 @@
           <div class="column size-lg-75">
             <form id="newsletterForm" name="newsletterForm" class="mt-25">
               <div class="row justify-content-center">
-                <div class="column size-lg-50">
+                <div class="column size-lg-50 size-100">
                   <div class="form-group">
                     <label for="newsName" class="form-label">
                       Nome do seu amigo:
@@ -157,7 +155,7 @@
                     <span id="newsNameHelper" class="errorMsg"></span>
                   </div>
                 </div>
-                <div class="column size-lg-50">
+                <div class="column size-lg-50 size-100">
                   <div class="form-group">
                     <label for="newsEmail" class="form-label">
                       E-mail:
@@ -166,8 +164,8 @@
                     <span id="newsEmailHelper" class="errorMsg"></span>
                   </div>
                 </div>
-                <div class="column size-lg-40">
-                  <div class="form-actions mt-30">
+                <div class="column size-lg-40 size-75">
+                  <div class="form-actions">
                     <button id="moreProductsButton" type="submit">
                       Enviar agora
                     </button>

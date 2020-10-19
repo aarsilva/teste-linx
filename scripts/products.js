@@ -19,7 +19,7 @@ const BASIC_STATE = {
  */
 function createCard(data) {
   const CARD_FIELD = `
-    <div class="column size-lg-25">
+    <div class="column size-lg-25 product">
       <div class="card">
         <div class="card-image">
           <img src="${data.image}" alt="${data.name}">

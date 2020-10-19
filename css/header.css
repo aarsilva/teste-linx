@@ -20,7 +20,7 @@ header .background {
   z-index: 0;
 
   background-color: #707070;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 65%);
 }
 
 header .container {
@@ -28,7 +28,7 @@ header .container {
   z-index: 1;
 
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 header .header-slogan {
@@ -48,6 +48,15 @@ header .header-title {
 header .header-text {
   font-size: 1rem;
   font-weight: normal;
+
+  margin-bottom: 56px;
+}
+
+header .column {
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin-bottom: 20px;
 }
 
 header button {
@@ -67,8 +76,21 @@ header button {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
   }
 
+  header .container {
+    text-align: center;
+  }
+
   header .header-title {
     margin-bottom: 24px;
+  }
+
+  header .header-text {
+    margin-bottom: 50px;
+  }
+
+  header .column {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   header button {
