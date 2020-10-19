@@ -14,6 +14,14 @@ main section {
 }
 
 /* Text and First Form Section Style */
+main .main-algorithm {
+  padding: 4px 0;
+}
+
+main .main-algorithm-content {
+  margin-bottom: 16px;
+}
+
 main .main-title {
   font-size: 1.425rem;
   font-weight: normal;
@@ -30,13 +38,17 @@ main .section-header {
   position: relative;
   margin-top: 2.75rem;
   padding-top: 2.75rem;
+
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 main .section-header-text {
   position: absolute;
+  min-width: 215px;
   top: 0;
   left: 50%;
-  padding: 0.8rem 1.3rem;
+  padding: 0.8rem 0;
 
   font-size: 1.25rem;
   font-weight: bold;
@@ -45,7 +57,7 @@ main .section-header-text {
   letter-spacing: 0px;
   color: #888888;
 
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #FFFFFF;
 
   transform: translateX(-50%);
   z-index: 1;
@@ -63,20 +75,26 @@ main .section-header-divider {
 }
 
 /* Product Section Style */
-.card {
-  display: flex;
-  flex-direction: column;
+main .main-products .product {
+  padding: 0 10px;
+}
 
-  padding: 0 0.4rem;
+.card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+
   margin-top: 40px;
 }
 
 .card-image {
   display: block;
-  width: 100%;
+  width: 47.5%;
   margin-bottom: 1rem;
+  float: left;
 
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background-color: #FFFFFF;
 
   border: 1px solid #707070;
   text-align: center;
@@ -85,6 +103,13 @@ main .section-header-divider {
 .card-image > img {
   width: 75%;
   height: auto;
+}
+
+.card-text {
+  width: 52.5%;
+  padding-left: 23px;
+
+  float: left;
 }
 
 .card-text-title {
@@ -96,6 +121,7 @@ main .section-header-divider {
 }
 
 .card-text-desc {
+  display: none;
   font-size: 0.875rem;
   line-height: 1.31;
 }
@@ -104,6 +130,11 @@ main .section-header-divider {
   font-size: 0.825rem;
   font-weight: normal;
   line-height: 1.31;
+
+  width: 52.5%;
+  padding-left: 23px;
+
+  float: left;
 }
 
 .card-price-old {
@@ -118,12 +149,24 @@ main .section-header-divider {
   margin-bottom: 7px;
 }
 
+.card-price-installments {
+  margin-bottom: 10px;
+}
+
+.card-button {
+  width: 52.5%;
+  padding-left: 23px;
+
+  float: left;
+}
+
 .card-button > button {
   width: 100%;
+  padding: 6px 0;
 }
 
 .product-button {
-  padding-top: 4.2rem;
+  padding-top: 53px;
 }
 
 .product-button > button {
@@ -137,5 +180,78 @@ main .section-header-divider {
 }
 
 .newsletter-content {
-  margin-top: 35px
+  margin-top: 18px;
+}
+
+.newsletter button {
+  margin-top: 21px;
+}
+
+@media only screen and (min-width: 992px) {
+  main .main-algorithm {
+    padding: 1.45rem 0;
+  }
+
+  main .main-algorithm-content {
+    margin-bottom: 0;
+  }
+
+  main .section-header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Product Responsive Style */
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 0.4rem;
+    margin-top: 40px;
+  }
+
+  .card-image {
+    flex: 0 1 auto;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card-image > img {
+    width: 75%;
+  }
+
+  .card-text {
+    flex: 0 1 auto;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .card-text-desc {
+    display: block;
+  }
+
+  .card-price {
+    flex: 0 1 auto;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .card-button {
+    flex: 0 1 auto;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .product-button {
+    padding-top: 4.2rem !important;
+  }
+
+  /* Newsletter Responsive Style */
+  .newsletter-content {
+    margin-top: 35px;
+  }
+
+  .newsletter button {
+    margin-top: 30px;
+  }
 }
