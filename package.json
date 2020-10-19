@@ -1,18 +1,21 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.html",
   "repository": "https://github.com/aarsilva/teste-linx.git",
   "author": "Arthur Affonso <arthribeirosilva@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.php"
   },
   "dependencies": {
     "axios": "^0.20.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "engines": {
+    "node": "12.19.x"
   }
 }
